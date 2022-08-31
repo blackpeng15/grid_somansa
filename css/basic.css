@@ -1,0 +1,478 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    outline: none
+}
+img {
+    border: 0;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.center {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header 영역 CSS  */
+#header_wrap {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+header {
+
+}
+header h1 {
+    float: left;
+    margin-top: 21px;
+}
+header h1 a {
+
+}
+header nav {
+    float: right;
+}
+header nav ul {
+
+}
+header nav > ul > li {
+    float: left;
+    margin-left: 25px;
+}
+header nav > ul > li > a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    height: 90px;
+    line-height: 80px;
+    transition: all 0.4s;
+}
+header nav > ul > li > a:hover {
+    color: rgb(54, 152, 193);
+}
+/* Header Submenu 영역 CSS */
+header nav ul li ul.sub {
+    position: absolute;
+    top: 85%;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+header nav ul li:hover ul.sub {
+    display: block;
+}
+header nav ul li ul.sub::before {
+    content:'';
+    position: absolute;
+    top: -13px;
+    left: 42px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-bottom: calc( 8px * 1.732 ) solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+header nav ul li ul.sub li {
+    margin-bottom: 5px;
+}
+header nav ul li ul.sub li a {
+    color: #777;
+    font-size: 13px;
+    white-space: nowrap;;
+}
+header nav ul li ul.sub li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Main Slider 영역 CSS  */
+#main_slider {
+    width: 100%;
+    overflow: hidden;
+}
+#main_slider .img_wrap {
+    position: relative;
+    width: 1920px;
+    height: 535px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#main_slider .img_wrap img {
+    height: auto;
+}
+#main_slider .img_wrap .slider_text {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+#main_slider .img_wrap .slider_text h3 {
+    font-size: 24px;
+    line-height: 26px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+}
+#main_slider .img_wrap .slider_text p:nth-of-type(1) {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 8px;
+}
+#main_slider .img_wrap .slider_text p:nth-of-type(2) {
+    font-size: 55px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+#main_slider .img_wrap .slider_text a {
+    color: #fff;
+    display: block;
+    border: 2px solid #fff;
+    width: 122px;
+    padding: 3px 0;
+    margin: 0 auto;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+#main_slider .img_wrap .slider_text a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Main Contents 영역 CSS */
+main {
+
+}
+main section {
+    padding: 60px 0;
+}
+main section h3 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color: #3698c1;
+    margin-bottom: 52px;
+}
+main section.s1 ul {
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+main section.s1 ul li {
+    float: left;
+    width: 183.5px;
+    height: 210px;
+    margin-right: 20.5px;
+    background-color: #3698c1;
+}
+main section.s1 ul li:last-child {
+    margin-right: 0;
+}
+main section.s1 ul li div {
+
+}
+main section.s1 ul li div h4 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+    margin: 35px 0 17px;
+}
+main section.s1 ul li div a {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+}
+main section.s1 ul li div a:hover {
+    text-decoration: underline;
+}
+
+main section.s2 {
+    background-color: #f1f1f1;
+    padding-bottom: 55px;
+}
+main section.s2 div {
+    text-align: center;
+    padding: 20px 0 30px;
+}
+main section.s2 div a {
+    color: #000;
+}
+
+main section.s3{
+    background: #3698c1;
+    padding-bottom: 80px;
+}
+main section.s3 h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+main section.s3 p{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+main section.s3 ul{
+    display: flex;
+    justify-content: space-between;
+}
+main section.s3 ul li{
+
+}
+main section.s3 ul li a{
+    display: block;
+    width: 310px;
+    line-height: 100px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+main section.s3 ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+main section.s4 {
+    padding-bottom: 70px;
+}
+main section.s4 .left {
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+    width: 458px;
+}
+main section.s4 .left .youtube {
+    height: 302px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+main section.s4 .left ul.logos {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 15px;
+}
+main section.s4 .left ul.logos li {
+    float: left;
+}
+main section.s4 .left ul.logos li::after {
+    content:'';
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    background: #eee;
+    margin: 0 15px 0 10px;
+}
+main section.s4 .left ul.logos li:last-child::after {
+    opacity: 0;
+}
+main section.s4 .left ul.logos li a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+main section.s4 .left .logos li img {
+    vertical-align: middle;
+}
+main section.s4 .right {
+    float: left;
+    width: 476px;
+    color: #fff;
+}
+main section.s4 .right h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+main section.s4 .right .vision {
+    background: #414d53;
+    height: 100px;
+    padding: 8px 19px 40px;
+    margin-bottom: 20px;
+}
+main section.s4 .right .vision h4 {
+    padding-bottom: 14px;
+}
+main section.s4 .right .vision p {
+    text-align: center;
+}
+main section.s4 .right .news_list {
+    background: #1c96ca;
+    height: 140px;
+    padding: 20px 18px;
+}
+main section.s4 .right .news_list .text_wrap {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+main section.s4 .right .news_list .text_wrap h4 {
+    display: inline-block;
+}
+main section.s4 .right .news_list .text_wrap .more {
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    padding-top: 8px;
+}
+main section.s4 .right .news_list .text_wrap .more a {
+    color: #fff;
+}
+main section.s4 .right .news_list ul {
+    
+}
+main section.s4 .right .news_list ul li {
+
+}
+main section.s4 .right .news_list ul li a {
+    color: #fff;
+    overflow: hidden;
+}
+main section.s4 .right .news_list ul li a p {
+    font-size: 14px;
+    display: inline-block;
+}
+main section.s4 .right .news_list ul li a p.date {
+    font-size: 12px;
+    float: right;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* Footer 영역 CSS */
+#footer_wrap {
+    background: #404b51;
+}
+#footer_wrap .footer_top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    height: 50px;
+    line-height: 50px;
+}
+#footer_wrap .footer_top a {
+    color: #fff;
+    overflow: hidden;
+}
+#footer_wrap .footer_top ul.footer_menu {
+    float: left;
+    overflow: hidden;
+}
+#footer_wrap .footer_top ul.footer_menu li {
+    float: left;
+}
+#footer_wrap .footer_top ul.footer_menu li a {
+    font-size: 15px;
+    margin-right: 30px;
+}
+#footer_wrap .footer_top .select {
+    float: right;
+    width: 186px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+#footer_wrap .footer_top .select .select_btn {
+    width: 186px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: #2e3832;
+}
+#footer_wrap .footer_top .select .select_list {
+    width: 186px;
+    display: none;
+}
+#footer_wrap .footer_top .select .select_list a {
+    display: block;
+    padding: 10px;
+    color: #555;
+    background: #fff;
+    transition: all 0.4s;
+}
+#footer_wrap .footer_top .select .select_list a:hover {
+    background-color: #555;
+    color: #fff;
+}
+#footer_wrap .footer_top .select:hover .select_list {
+    display: block;
+}
+
+#footer_wrap footer {
+    overflow: hidden;
+}
+#footer_wrap footer .center {
+    padding: 22px 0 42px;
+}
+#footer_wrap footer .center h2 {
+    float: left;
+    margin-right: 38px;
+}
+#footer_wrap footer .center .address {
+    float: left;
+    margin-right: 102px;
+}
+#footer_wrap footer .center .address p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #cae1ee;
+}
+#footer_wrap footer .center .address p:nth-child(2) {
+    color: #647b87;
+}
+#footer_wrap footer .center .sns {
+
+}
+#footer_wrap footer .center .sns a {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    background: #4d5a61;
+    margin-right: 10px;
+}
+#footer_wrap footer .center .sns a img {
+    margin: 13px 0 0 10px;
+}
+
+
+
+
